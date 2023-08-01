@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/style.css" rel="stylesheet">
     <title>Timed Quizz</title>
 </head>
 <body>
@@ -20,20 +21,22 @@
         <button id="start-button">Start</button>
     </div>
     
-    <div class="Questions">
-       <h2 id="Timer">Time Left</h2> 
-       <ol type="1">Question 1
-        <li>Answer A</li>
-        <li>Answer B</li>
-        <li>Answer C</li>
-        <li>Answer D</li>
-       </ol>
-       <button id="next-button">Next</button>
+    <div class="Quiz">
+       <h2 id="Timer">Time Left</h2>
+       <div id="Questions">Questions
+        <div class="answers">
+            <button id="answer1" class="answerbtn">Answer1</button>
+            <button id="answer2" class="answerbtn">Answer2</button>
+            <button id="answer3" class="answerbtn">Answer3</button>
+            <button id="answer4" class="answerbtn">Answer4</button>
+        </div>
+        <button id="next">Next</button>
+       </div> 
+
+       
         
-
-
-
+        
     </div>
-    
+    <script src="./assets/script.js"></script>
 </body>
 </html>
