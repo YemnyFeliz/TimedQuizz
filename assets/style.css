@@ -1,3 +1,11 @@
 
+#Intro {
+    display:block;
+}
 
-
+#startbtn {
+    display:block;
+}
+#Quiz{
+    display: none;
+}
