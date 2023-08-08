@@ -1,11 +1,34 @@
 
+
+
+
+
+
+
 #Intro {
-    display:block;
+    display: block;
 }
 
 #startbtn {
-    display:block;
+    display: block;
 }
-#Quiz{
+
+#Quiz {
+    display: none;
+}
+
+#QuizEnd {
+    display: none;
+}
+
+#initials {
+    display: none;
+}
+
+#submitbtn {
+    display: none;
+}
+
+#highScore {
     display: none;
 }
