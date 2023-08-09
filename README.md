@@ -30,11 +30,13 @@ Deployed App: https://yemnyfeliz.github.io/TimedQuizz/
 N/A
 
 
+
 ## Usage
 
 This app can be used to quickly test basic knoledge on JavaScript.
+https://github.com/YemnyFeliz/TimedQuizz/assets/132311127/378a56a6-15c4-47f8-a474-c1917fabeff5
 
-![TimedQuizz video](./assets/QuizApp.mp4)
+
 
 ## Credits
 
