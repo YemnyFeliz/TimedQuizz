@@ -1,34 +1,293 @@
+/* Universal Selector */
 
+* {
+    margin: 0;
+    padding: 0;
 
+}
 
+/* Styled body of entire app */
 
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: midnightblue;
+    font-family: cursive;
+}
 
+/* Different color for intro, styled each element separetely */
 
+.introQuiz {
+    padding: 5%;
+    padding-bottom: 5%;
+    background-color: lightcyan;
+    width: 35%;
+    max-width: 80%;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/* Aligned all elements using block, margin auto, width fit content and align items center */
+
+h1 {
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    padding-bottom: 10%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    margin: auto;
+    width: fit-content;
+    text-align: left;
+    font-size: 28px;
+    padding-bottom: 5%;
+}
+
+#startbtn {
+    margin: auto;
+    width: fit-content;
+    display: block;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    border: 1px;
+    padding: 15px 20px;
+    background-color: darkgray;
+    border-radius: 15px;
+}
+
+#startbtn:hover {
+    background-color: blueviolet;
+}
+
+/* This sets the intro in JS to block and then to hidden
+Preferred using id to class */
 
 #Intro {
     display: block;
 }
 
-#startbtn {
-    display: block;
-}
+/* Different color for Quiz Questions */
 
 #Quiz {
     display: none;
+    width: 600px;
+    max-width: 80%;
+    padding: 5%;
+    background-color: ghostwhite;
+    border-radius: 20px;
+    font-size: 32px;
+    position: relative;
+
+}
+/* Styles the text questions outside the answer choices */
+
+#Questions {
+    text-align: center;
+    font-weight: bold;
+}
+
+#Timer-count {
+    position: absolute;
+    top: 2%;
+    left: 85%;
+    color: black;
+}
+
+/* General styles was applied to all answer choices in this classs */
+
+.answerbtn {
+    display: block;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    font-size: 32px;
+    padding: 10px;
+    background-color: lightgrey;
+    border: 2px;
+
+}
+
+.answerbtn:hover {
+    background-color: mediumpurple;
+}
+
+/* Used each answer choice id to space them out from each other */
+
+#answer1 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#answer2 {
+    margin-bottom: 3%;
+}
+
+#answer3 {
+    margin-bottom: 3%;
+}
+
+#answer4 {
+    margin-bottom: 3%;
+}
+
+#showCorrect {
+    font-size: 24px;
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    left: 80%;
+
 }
 
 #QuizEnd {
     display: none;
+    width: 600px;
+    max-width: 80%;
+    padding: 5%;
+    background-color: ghostwhite;
+    border-radius: 20px;
+    font-size: 32px;
+
+}
+
+#scores {
+    display: none;
+    padding: 10px;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    /* left: 100px; */
 }
 
 #initials {
     display: none;
+    font-size: 28px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: fit-content;
+    align-items: center;
 }
 
 #submitbtn {
     display: none;
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 3%;
+    width: fit-content;
+    align-items: center;
+    border: 1px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: lightgray;
+    position: relative;
+
+}
+
+#submitbtn:hover {
+    background-color: blueviolet;
+}
+
+/* Different background color */
+
+#showScore {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 3%;
+    width: fit-content;
+    align-items: center;
+    border: 1px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: lightgray;
+    position: relative;
+}
+
+#showScore:hover {
+    color: blueviolet;
 }
 
 #highScore {
     display: none;
+    margin: auto;
+    width: 30%;
+    max-height: 70%;
+    max-width: 80%;
+    padding: 5%;
+    background-color: lightgrey;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#titleScore {
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+ul {
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    list-style: none;
+    font-size: 32px;
+    padding: 5%;
+}
+
+
+#GoBack {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    border: 1px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: darkgray;
+    position: relative;
+}
+
+#Clear {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    border: 1px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: darkgray;
+    position: relative;
+}
+
+#GoBack:hover {
+    background-color: blueviolet;
+    ;
+}
+
+#Clear:hover {
+    color: blueviolet;
+    ;
 }
