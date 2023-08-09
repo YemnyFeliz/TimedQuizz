@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/style.css" rel="stylesheet">
     <title>Timed Quizz</title>
 </head>
+
 <body>
-    <div id="intro">
+    <!-- created div intro class to style in CSS and id to select it in JS -->
+
+    <div id="intro" class="introQuiz">
         <h1>Quick JavaScript Quiz</h1>
 
-        <p>You will be presented with questions related to JaavaScript.<br>
-        Click the start button to take the quiz.<br>
-        Once you click start, the timer will start and a question with multiple choices will appear.<br>
-        When you select an answer you will be taken to the next question.<br>
-        If the answer is wrong time will be taken off.<br>
-        The quiz is over when the timer has reached 0 or when all questions have been answered.
+        <p>You will be presented with questions related to JavaScript.<br>
+            Click the Start Quiz button to take the quiz.<br>
+            Once you click start, you will have 110 seconds to finish.<br>
+            When you select an answer you will be taken to the next question.<br>
+            If the answer is wrong 10 seconds will be taken off.<br>
+            The quiz is over when the timer has reached 0 or when all questions have been answered.
         </p>
 
-        <button id="startbtn">Start</button>
+        <button id="startbtn">Start Quiz</button>
+
     </div>
-    
+
+    <!-- The Questions id is used in JS to show the questions created in JS
+    Timer-count is used in JS to show the countdown 
+    Each answer has an id that is used in JS to add eventlistener
+    Answers share the same class to be styled the same in css
+    "showCorrect id gets info from JS to tell users if the answer is wrong or correct once they click on it"-->
+
+
     <div id="Quiz">
-       <h2 id="Timer-count"></h2>
-       <div id="Questions"></div> 
-        <div class="answers" >
+        <h2 id="Timer-count"></h2>
+        <div id="Questions"></div>
+        <div class="answers">
             <button id="answer1" class="answerbtn"></button>
             <button id="answer2" class="answerbtn"></button>
             <button id="answer3" class="answerbtn"></button>
             <button id="answer4" class="answerbtn"></button>
+            <div id="showCorrect"></div>
         </div>
-        <!-- <button id="next">Next</button> -->
-           
+
+
     </div>
+<!-- QuizEnd displays the final score allow users to saver their scores and initials.
+Each is is used in JS to obtain the innformation needed and display it on the app -->
+
     <div id="QuizEnd">
         <h2 id="scores"></h2>
-        <input type="text" id="initials">
+        <input type="text" placeholder="Please enter your initials... " id="initials">
         <input type="submit" value="submit" id="submitbtn">
         <button id="showScore">view high score</button>
+
     </div>
-    <div id = "highScore">
-        <h2>High Scores</h2>
-        <ul id = "allScores">
+    <!-- High scores and initials are stored and displayed in this div and users can clear the information.
+    Users can also re-take the quiz -->
+    <div id="highScore">
+        <h2 id="titleScore">High Scores</h2>
+        <ul id="allScores">
         </ul>
+        <button id="GoBack">Go Back!</button>
+        <button id="Clear">Clear scores</button>
     </div>
     <script src="./assets/script.js"></script>
 </body>
+
 </html>
